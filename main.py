@@ -54,7 +54,7 @@ def main():
                 print('mutation is done')
                 toolbox.mutate(mutant)
 
-        '''Replace population with next generation individual '''
+
         individuals[:] = offspring
 
         best = individuals[np.argmax([toolbox.evaluate(x) for x in individuals])]
